@@ -1,0 +1,26 @@
+/* ==== Estilos personalizados para el mensaje flotante ==== */
+
+/* Sombra suave para las alertas */
+.sombra-alerta {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
+
+/* Transición suave al aparecer */
+#alertContainer .alert {
+    animation: fadeInUp 0.4s ease;
+}
+
+/* Animación personalizada: aparece desde abajo */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
